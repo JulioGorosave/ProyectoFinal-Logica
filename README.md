@@ -1,96 +1,97 @@
-Proyecto final para Programación Lógica
+# Proyecto final para Programación Lógica
 
-Integrantes del equipo
+###  Integrantes del equipo
+- **Gorosave Osuna Julio César**  
+- **Angulo Martínez Ángel Gabriel**  
+- **Castillo Escareño Coral**  
+- **Alonso Hernández Devorah**  
+- **Lazcano Butcher Mario Antonio**
 
-Gorosave Osuna Julio César
+---
 
-Angulo Martínez Ángel Gabriel
+## Descripción del proyecto
+Este proyecto consiste en un **sistema de recomendación turística** desarrollado con **FastAPI**.  
+El sistema permite al usuario obtener hoteles y actividades cercanas utilizando un **motor de inferencia lógica**, aplicando reglas basadas en:
 
-Castillo Escareño Coral
+- Ciudad seleccionada  
+- Presupuesto disponible  
+- Etiquetas o características del hotel  
+- Distancia máxima hacia puntos de interés  
 
-Alonso Hernández Devorah
+Cada resultado incluye explicaciones de las reglas aplicadas (R1, R2, R3) para entender por qué el hotel cumple con los criterios.
 
-Lazcano Butcher Mario Antonio
+---
 
+## Tecnologías utilizadas
+- **Python 3**
+- **FastAPI**
+- **Uvicorn**
+- **HTML / CSS / JavaScript**
+- **Motor lógico en Python**
+- **CORS Middleware**
 
-Descripción del proyecto
+---
 
-Este proyecto consiste en el desarrollo de un sistema de recomendación turística construido con FastAPI.
-El sistema permite obtener hoteles y actividades cercanas según reglas lógicas basadas en:
+## Estructura del proyecto
 
-Ciudad seleccionada
+/api.py → Servidor FastAPI principal
 
-Presupuesto
+/config.py → Configuración de etiquetas, distancias y tipos
 
-Estilo o etiquetas del hotel
+/data.py → Datos de hoteles y actividades
 
-Distancia a puntos de interés
+/logic.py → Motor lógico y reglas de inferencia
 
-El motor aplica reglas lógicas explícitas (R1, R2 y R3) para filtrar opciones de manera razonada, retornando explicaciones detalladas de por qué cada hotel cumple o no con los criterios.
+/install.txt → Dependencias del proyecto
 
-Tecnologías utilizadas
+/html/ → Interfaz y archivos estáticos
 
-Python 3
-
-FastAPI
-
-Uvicorn
-
-HTML/CSS/JS (frontend)
-
-Motor de inferencia en Python
-
-CORS Middleware
-
-
-Estructura del proyecto
-
-/api.py          → Servidor principal FastAPI
-
-/config.py       → Configuración de tipos, distancias y etiquetas
-
-/data.py         → Base de datos local de hoteles y puntos de interés
-
-/logic.py        → Motor lógico de inferencia
-
-/install.txt     → Dependencias del proyecto
-
-/html/           → Archivos estáticos del frontend
-
-/images/         → Imágenes para el frontend
+/images/ → Imágenes del sistema
 
 
-Cómo ejecutar el proyecto
-1. Instalar dependencias
+---
 
-Ejecuta en terminal:
+## Cómo ejecutar el proyecto
+
+### 1️⃣ Instalar dependencias
+Ejecutar en la terminal:
 
 pip install -r install.txt
 
+---
 
-2. Iniciar el servidor
-
-Ejecuta:
+### 2️⃣ Iniciar el servidor
+Ejecutar:
 
 uvicorn api:app --reload
 
-3. Ingresar al sistema
 
-Una vez levantado el servidor, abre el enlace que aparece en la terminal, por lo general:
+---
 
-http://127.0.0.1:8000/
+### 3️⃣ Abrir el sistema
+Visitar en el navegador: http://127.0.0.1:8000/ 
 
-Características principales del sistema
 
-✔ Buscador inteligente de hoteles
 
-✔ Filtrado por ciudad
+---
 
-✔ Filtrado por presupuesto
+## ⭐ Características principales
+✔ Filtro por ciudad  
+✔ Filtro por presupuesto  
+✔ Selección de etiquetas del hotel  
+✔ Reglas lógicas (R1, R2, R3) con explicación detallada  
+✔ Actividades cercanas mediante distancia Haversine  
+✔ API documentada automáticamente con FastAPI  
+✔ Respuestas estructuradas en JSON  
 
-✔ Filtrado por etiquetas (romántico, familiar, lujo, etc.)
+---
 
-✔ Listado de actividades cercanas usando la distancia Haversine
+##  Notas adicionales
+Este proyecto fue creado como parte del **Proyecto Final de la materia Programación Lógica**, demostrando el uso de reglas, hechos y un motor de inferencia aplicado a un contexto real.
 
-✔ Explicaciones lógicas de por qué cada hotel fue aceptado o descartado
+---
+
+
+
+
 
