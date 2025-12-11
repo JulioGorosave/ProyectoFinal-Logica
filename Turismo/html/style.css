@@ -1,0 +1,365 @@
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+     background-position: center;    
+    background-repeat: no-repeat;   
+    background-attachment: fixed;  
+     background-size: cover; 
+     overflow-x: hidden;
+    background-color: #fffff9;
+}
+.grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+justify-content: flex-start;
+text-align: center;
+
+}
+@media (min-width: 1000px){
+    .grid {
+        grid-template-columns: 360px 1fr;
+    }
+}
+.card {
+    align-content: center;
+    border: 1px solid #e1e5eb;
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 20px;
+    font-family: "DM Sans", sans-serif;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid #f6d157;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(/images/fondo2.png);
+     background-size: cover;
+}
+.row > * {
+    margin: 4px 0;
+}
+input, select, button {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+button {
+    cursor: pointer;
+    background-color: rgb(255, 183, 50);
+}
+#map {
+    height: 70vh;
+    border-radius: 12px;
+}
+
+.chip {
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    padding:6px 10px;
+    border:1px solid #e5e7eb;
+    border-radius:999px;
+    cursor:pointer;
+    user-select:none;
+}
+.chip.include {
+    background:#dcfce7;
+    border-color:#86efac;
+}
+.chip.exclude {
+    background:#fee2e2;
+    border-color:#fca5a5;
+}
+.chip-on {
+    background: #f1f5f9;
+}
+.chip-off {
+    background: #374151;
+    color: #e5e7eb;
+    border-color: #4b5563;
+}
+
+.muted {
+    color:#64748b;
+    font-size: .9rem;
+}
+.list {
+    max-height: 65vh;
+    overflow:auto;
+}
+.hotel-item {
+    padding:8px;
+    border-bottom: 1px dashed #e5e7eb;
+    cursor:pointer;
+}
+.hotel-item:hover {
+    background:#f8fafc;
+}
+.hotel-item.selected {
+    background:#e0f2fe;
+    border-color:#38bdf8;
+}
+.explicacion {
+    margin-top: 4px;
+    padding-left: 18px;
+    color: #64748b;
+    font-size: 0.6rem;
+}
+.explicacion li {
+    margin-bottom: 2px;
+}
+
+.popup-img {
+    display: block;
+    max-width: 220px;
+    max-height: 140px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 6px;
+    object-fit: cover;
+}
+.hero {
+    width: 100%;
+    padding: 0px 20px;
+    background: linear-gradient(
+        135deg,
+        rgb(150, 112, 10),   
+        rgba(220, 175, 52, 0.6)   
+    );
+
+    backdrop-filter: blur(4px);  /* opcional, estilo glass */
+    color: white;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+    font-size: 30px;
+     margin-left: 0;
+
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.hero1 {
+    width: 100%;
+    height: 700px;
+    
+    padding: 80px 20px;
+    font-size: 50px;
+    backdrop-filter: blur(2px); 
+    color: rgb(232, 230, 238);
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #c48457;
+    background-image: url(/images/DISFRUTA\ \(6\).png);
+    background-size: cover;
+background-position: center -190px;
+
+background-repeat: no-repeat;
+    
+}
+
+.hero1 h2 {
+    font-size: 48px;         
+      font-family: "DM Sans", sans-serif;
+}
+
+.hero1 h3 {
+    font-size: 38px;         
+    
+      font-family: "DM Sans", sans-serif;
+}
+
+.hero1 #btnForm {
+    background-color: #f6d157;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(246, 209, 87, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero1 #btnForm:hover {
+    background-color: rgb(59, 47, 16);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(175, 135, 36, 0.4);
+}
+
+.hero1 #btnForm:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(175, 135, 36, 0.3);
+}
+
+.hero1 #btnForm::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.hero1 #btnForm:hover::before {
+    left: 100%;
+}
+
+.card2 {
+      border: 1px solid #e1e5eb;
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    font-family:  "DM Sans", sans-serif;
+    padding: 20px;
+    margin: 20px;
+    
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid #f6d157;
+
+    height: auto;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.card img {
+    height: auto;
+    object-fit: cover;
+}
+@media (max-width: 900px) {
+    .hero1 {
+        height: 40vh;
+        background-position: center -20px;
+        font-size: 32px;
+    }
+}
+
+/* --- Pantallas pequeñas (móviles) --- */
+@media (max-width: 600px) {
+    .hero1 {
+        height: 35vh;
+        background-position: center 0px; /* que se vea completa */
+        font-size: 26px;
+    }
+}
+#carouselCards {
+    margin-top: 150px;   
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+}
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card {
+    width: 100%;
+    max-width: 100%;
+}
+#typeChips {
+    display: flex;
+    flex-wrap: nowrap;        
+    gap: 10px;  
+    font-size: 13px;           
+    padding-bottom: 8px;
+    scrollbar-width: thin;    
+}
+
+#typeChips::-webkit-scrollbar {
+    height: 6px;
+}
+
+#typeChips::-webkit-scrollbar-thumb {
+    background: #d1d1d1;
+    border-radius: 4px;
+}
+
+#typeChips > * {
+    flex: 0 0 auto !important;   
+    width: auto !important;
+    max-width: max-content !important;
+}
+
+.btnvolver {
+    background: #d6bd50dd;
+    border: 2px solid #a58b2b;
+    color: #fff9eb;
+    
+    padding: 8px 22px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 30px;
+    cursor: pointer;
+    transition: all .25s ease;
+    backdrop-filter: blur(4px);
+}
+
+.btnvolver:hover {
+    background: #2f3a4a;
+    color: #fff;
+    transform: translateX(-3px);
+}
+
+#carouselCards > .carousel-inner > h2 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    color: rgb(197, 197, 120) !important;
+    text-align: center !important;
+    margin-bottom: 25px !important;
+}
+#carouselCards .carousel-inner {
+    background-color: #e8ddc3; 
+    padding: 40px 0;
+    border-radius: 16px;
+}
+.row1 {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    background-image: url(/images/Copia\ de\ Página\ web\ de\ hospedaje\ con\ búsqueda\ por\ presupuesto\ y\ ubicación\ \(1\).png);
+    background-size: cover;        
+    background-position: center; 
+    background-repeat: no-repeat;  
+
+    width: 100%;                   
+    padding: 40px 0;               
+}
