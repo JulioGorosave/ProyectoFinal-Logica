@@ -75,7 +75,7 @@ Visitar en el navegador: http://127.0.0.1:8000/
 
 ---
 
-## ⭐ Características principales
+##  Características principales
 ✔ Filtro por ciudad  
 ✔ Filtro por presupuesto  
 ✔ Selección de etiquetas del hotel  
