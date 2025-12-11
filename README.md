@@ -1,14 +1,11 @@
 Proyecto final para Programación Lógica
+
 Integrantes del equipo
 
 Gorosave Osuna Julio César
-
 Angulo Martínez Ángel Gabriel
-
 Castillo Escareño Coral
-
 Alonso Hernández Devorah
-
 Lazcano Butcher Mario Antonio
 
 Descripción del proyecto
@@ -74,9 +71,14 @@ http://127.0.0.1:8000/
 Características principales del sistema
 
 ✔ Buscador inteligente de hoteles
+
 ✔ Filtrado por ciudad
+
 ✔ Filtrado por presupuesto
+
 ✔ Filtrado por etiquetas (romántico, familiar, lujo, etc.)
+
 ✔ Listado de actividades cercanas usando la distancia Haversine
+
 ✔ Explicaciones lógicas de por qué cada hotel fue aceptado o descartado
-✔ API documentada automáticamente por FastAPI
+
