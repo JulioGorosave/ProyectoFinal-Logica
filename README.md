@@ -1,8 +1,8 @@
 # Proyecto final para Programación Lógica
 
 ###  Integrantes del equipo
-- **Gorosave Osuna Julio César**  
-- **Angulo Martínez Ángel Gabriel**  
+- **Gorosave Osuna Julio Cesar**  
+- **Angulo Martínez Angel Gabriel**  
 - **Castillo Escareño Coral**  
 - **Alonso Hernández Devorah**  
 - **Lazcano Butcher Mario Antonio**
