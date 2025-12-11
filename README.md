@@ -3,10 +3,15 @@ Proyecto final para Programación Lógica
 Integrantes del equipo
 
 Gorosave Osuna Julio César
+
 Angulo Martínez Ángel Gabriel
+
 Castillo Escareño Coral
+
 Alonso Hernández Devorah
+
 Lazcano Butcher Mario Antonio
+
 
 Descripción del proyecto
 
@@ -41,12 +46,19 @@ CORS Middleware
 Estructura del proyecto
 
 /api.py          → Servidor principal FastAPI
+
 /config.py       → Configuración de tipos, distancias y etiquetas
+
 /data.py         → Base de datos local de hoteles y puntos de interés
+
 /logic.py        → Motor lógico de inferencia
+
 /install.txt     → Dependencias del proyecto
+
 /html/           → Archivos estáticos del frontend
+
 /images/         → Imágenes para el frontend
+
 
 Cómo ejecutar el proyecto
 1. Instalar dependencias
